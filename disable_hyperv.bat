@@ -1,0 +1,6 @@
+@echo off
+echo [INFO] Отключаю Hyper-V и Hypervisor Platform...
+DISM /Online /Disable-Feature:Microsoft-Hyper-V-All
+DISM /Online /Disable-Feature:HypervisorPlatform
+echo [OK] Перезагрузка...
+shutdown -r -t 0
